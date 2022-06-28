@@ -26,6 +26,12 @@
 
 .vidrieraImagen{
     padding-left: 20px;
+    overflow: hidden;
+}
+
+.vidrieraImagen:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+
 }
 
 .vidriera__titulo{
@@ -38,7 +44,7 @@
 
 .vidriera__precio{
     position: relative;
-    left: 105px;
+    left: 100px;
     background-color: #9fb9f1;
     border-radius: 20px;
     text-align: center;
@@ -74,8 +80,8 @@
     list-style: none;
     font-size: 25px;
     background-color: #e3f2fd;
-    border-radius: 18px;
-    height: 60px;
+    height: 100%;
+    width: 100%;
 }
 
 .barraItem{
@@ -146,4 +152,15 @@
 .formularioBotones .formularioCheck{
 	background: #fff;
 	border-radius: 50%;
+}
+
+.titulo{
+    position: relative;
+    top: 15px;
+}
+
+@media  (max-width: 600px){
+    .titulo{ 
+        display:none;
+    }
 }
