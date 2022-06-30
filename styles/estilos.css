@@ -1,0 +1,141 @@
+@media (max-width: 600px) {
+  .titulo {
+    display: none;
+  }
+}
+.titulo {
+  position: relative;
+  top: 15px;
+}
+
+.vidriera {
+  font-family: "Overpass", sans-serif;
+  font-size: 25px;
+  background-image: url("./../images/cielonube.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.vidriera .vidrieraProducto {
+  background-image: url("./../images/header.png");
+  border-radius: 18px;
+  margin: 100px;
+}
+.vidriera .vidriera__datos {
+  color: #000000;
+}
+.vidriera .vidriera__datos .vidrieraImagen {
+  padding-left: 20px;
+  overflow: hidden;
+}
+.vidriera .vidriera__datos .vidrieraImagen:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.vidriera .vidriera__datos .vidriera__titulo {
+  background-color: #9fb9f1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.vidriera .vidriera__datos .vidriera__precio {
+  position: relative;
+  left: 100px;
+  background-color: #9fb9f1;
+  border-radius: 20px;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+.vidriera .vidriera__datos .botonComprar {
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  border: solid;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 80px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.vidriera .vidriera__datos .botonComprar:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.barra {
+  list-style: none;
+  font-size: 25px;
+  background-color: #e3f2fd;
+  height: 100%;
+  width: 100%;
+}
+.barra .barraItem {
+  background-color: #e3f2fd;
+  color: rgb(56, 56, 56);
+  font-family: "Overpass", sans-serif;
+  border-radius: 18px;
+}
+
+.formularioCompleto {
+  font-family: "Overpass", sans-serif;
+  background-color: rgba(255, 250, 157, 0.7411764706);
+  padding-left: 30px;
+}
+.formularioCompleto .formulario__titulo {
+  font-size: 50px;
+}
+.formularioCompleto .formularioTitulo {
+  font-size: 30px;
+}
+.formularioCompleto .formularioDato {
+  font-size: 25px;
+  font-weight: bold;
+}
+.formularioCompleto .formularioCasilla {
+  background: transparent;
+  border-radius: 6px;
+}
+.formularioCompleto .formularioRegion {
+  max-width: 250px;
+}
+.formularioCompleto .formularioRegion .formularioRegion select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: rgb(68, 67, 67);
+  font-size: 1em;
+  color: rgb(68, 67, 67);
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+.formularioCompleto .formularioRegion .formularioRegion select:hover {
+  background: #008CBA;
+}
+.formularioCompleto .formulariosBotones {
+  margin-bottom: 30px;
+  padding: 5px 0 5px 60px;
+}
+.formularioCompleto .formulariosBotones .formularioBotones .formularioCheck {
+  background: #fff;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

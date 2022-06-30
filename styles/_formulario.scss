@@ -1,0 +1,65 @@
+.formularioCompleto{
+    font-family: 'Overpass', sans-serif;
+    background-color: #fffa9dbd;
+    padding-left: 30px;
+
+    .formulario__titulo{
+        font-size: 50px;
+    }
+    
+    .formularioTitulo{
+        font-size: 30px;
+    }
+    
+    .formularioDato{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .formularioCasilla{
+        background: transparent;
+        border-radius: 6px;
+    }
+    
+    .formularioRegion{
+        max-width: 250px;
+
+        .formularioRegion select{
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+              padding: 7px 10px;
+              height: 42px;
+              outline: 0; 
+              border: 0;
+            border-radius: 0;
+            background: #f0f0f0;
+            color: rgb(68, 67, 67);
+            font-size: 1em;
+            color: rgb(68, 67, 67);
+            font-family: 
+            'Quicksand', sans-serif;
+            border:2px solid rgba(0,0,0,0.2);
+            border-radius: 12px;
+            position: relative;
+            transition: all 0.25s ease;
+
+            &:hover{
+                background: #008CBA;
+            }
+        }
+
+
+    }
+
+    .formulariosBotones{
+        margin-bottom: 30px;
+        padding:5px 0 5px 60px;
+
+        .formularioBotones .formularioCheck{
+            background: #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
