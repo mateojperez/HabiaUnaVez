@@ -1,11 +1,11 @@
-@media (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .titulo {
     display: none;
   }
 }
 .titulo {
-  position: relative;
-  top: 15px;
+  position: absolute;
+  top: 20px;
 }
 
 .vidriera {
@@ -15,6 +15,20 @@
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
+}
+.vidriera .imagenCarusel {
+  height: 600px;
+  width: 100px;
+}
+@media (max-width: 576px) {
+  .vidriera .imagenCarusel {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .vidriera .imagenCarusel {
+    height: 400px;
+  }
 }
 .vidriera .vidrieraProducto {
   background-image: url("./../images/header.png");
@@ -77,6 +91,7 @@
   background-color: #e3f2fd;
   height: 100%;
   width: 100%;
+  padding: 20px;
 }
 .barra .barraItem {
   background-color: #e3f2fd;
@@ -89,6 +104,8 @@
   font-family: "Overpass", sans-serif;
   background-color: rgba(255, 250, 157, 0.7411764706);
   padding-left: 30px;
+  width: 100%;
+  height: 100%;
 }
 .formularioCompleto .formulario__titulo {
   font-size: 50px;
@@ -136,6 +153,10 @@
 .formularioCompleto .formulariosBotones .formularioBotones .formularioCheck {
   background: #fff;
   border-radius: 50%;
+}
+
+body {
+  background-image: url("./../images/cielonube.jpg");
 }
 
 /*# sourceMappingURL=estilos.css.map */

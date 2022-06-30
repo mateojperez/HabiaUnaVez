@@ -6,6 +6,23 @@
     padding-bottom: 50px;
     width: 100%; 
 
+    .imagenCarusel{
+        height: 600px;
+        width: 100px;
+    }
+
+    @media (max-width:576px){
+        .imagenCarusel{
+            height: 200px;
+        }
+    }
+
+    @media (max-width:768px){
+        .imagenCarusel{
+            height: 400px;
+        }
+    }
+
     .vidrieraProducto {
         background-image: $fondoProducto;    
         border-radius: 18px;

@@ -1,10 +1,15 @@
-@media  (max-width: 600px){
+@media screen and (max-width: 1200px){
     .titulo{ 
         display:none;
     }
 }
 
-.titulo{
-    position: relative;
-    top: 15px;
+
+.titulo {
+    position: absolute;
+    top: 20px;
+
 }
+
+
+
