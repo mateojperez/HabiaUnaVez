@@ -1,7 +1,7 @@
 .vidriera {
     font-family: 'Overpass', sans-serif;
     font-size: 25px;
-    background-image: $fondoVidriera;
+    background: map-get($vidriera, fondoVidriera); 
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%; 
@@ -23,8 +23,12 @@
         }
     }
 
+    .productos{
+        @include displayFlex;
+    }
+
     .vidrieraProducto {
-        background-image: $fondoProducto;    
+        background: $fondoProducto;    
         border-radius: 18px;
         margin: 100px;
     }
@@ -42,9 +46,9 @@
         }
         
         .vidriera__titulo{
-            background-color: $tituloProducto;
+            background-color: map-get($vidriera, colorTitulo);
             border-radius: 20px;
-            text-align: center;
+            text-align: map-get($vidriera, centro);
             padding: 10px;
             margin: 10px;
         }
@@ -52,9 +56,9 @@
         .vidriera__precio{
             position: relative;
             left: 100px;
-            background-color: $tituloProducto;
+            background-color: map-get($vidriera, colorTitulo);
             border-radius: 20px;
-            text-align: center;
+            text-align: map-get($vidriera, centro);
             width: 100px;
             padding: 10px;
             margin: 10px;
@@ -62,15 +66,15 @@
         
         .botonComprar {
             color: #0099CC;
-            background: transparent;
+            background-color: rgba(240, 248, 255, 0.773);
             border: 2px solid #0099CC;
             border-radius: 6px;
             border: solid;
             color: rgb(0, 0, 0);
             padding: 16px 32px;
-            text-align: center;
-            font-size: 20px;
-            margin: 20px 80px;
+            text-align: map-get($vidriera, centro);
+            font-size: 25px;
+            margin: 20px 10px;
             -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
             cursor: pointer;
@@ -81,8 +85,12 @@
                 background-color: #008CBA;
                 color: white;
             }
+
         }
         
+        .botonCarrito{
+            @extend .botonComprar;
+        }
     }
 
 }

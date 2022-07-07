@@ -5,5 +5,5 @@
 @import "./formulario";
 
 body{
-    background-image: $fondoVidriera;
+    background-image: map-get($vidriera, fondoVidriera);
 }

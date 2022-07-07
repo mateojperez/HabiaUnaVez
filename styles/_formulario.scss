@@ -6,7 +6,7 @@
     height: 100%;
 
     .formulario__titulo{
-        font-size: 50px;
+        font-size: 30px;
     }
     
     .formularioTitulo{
@@ -16,6 +16,12 @@
     .formularioDato{
         font-size: 25px;
         font-weight: bold;
+    }
+
+    @media (max-width: 450px){
+        .formularioDato{
+            font-size: 15px;
+        }
     }
     
     .formularioCasilla{
@@ -56,7 +62,7 @@
 
     .formulariosBotones{
         margin-bottom: 30px;
-        padding:5px 0 5px 60px;
+        
 
         .formularioBotones .formularioCheck{
             background: #fff;

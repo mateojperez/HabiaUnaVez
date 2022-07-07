@@ -1,4 +1,16 @@
-$fondoVidriera : url("./../images/cielonube.jpg");
-$fondoProducto : url("./../images/header.png"); 
-$tituloProducto : #9fb9f1;
+$fondoProducto : url("./../images/header.png");
 $footerColor : #e3f2fd;
+
+$vidriera: (
+    colorTitulo: #9fb9f1,
+    centro: center,
+    fondoVidriera : url("./../images/cielonube.jpg")
+);
+
+@mixin displayFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

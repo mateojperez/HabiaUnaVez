@@ -1,17 +1,22 @@
 .barra{
     list-style: none;
-    font-size: 25px;
     background-color: $footerColor;
     height: 100%;
     width: 100%;
     padding: 20px;
-    
 
     .barraItem{
         background-color: $footerColor; 
         color: rgb(56, 56, 56);
         font-family: 'Overpass', sans-serif;;
         border-radius: 18px;
+        font-size: 30px;
+    }
+
+    @media (max-width: 450px){
+        .barraItem{
+            font-size: 15px;
+        }
     }
 }
 
