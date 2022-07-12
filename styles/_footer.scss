@@ -11,6 +11,16 @@
         font-family: 'Overpass', sans-serif;;
         border-radius: 18px;
         font-size: 30px;
+        position: relative;
+        left: 45px;
+    }
+
+    .barraItemInstagram{
+        width: 150px;
+        background-image: url("./../images/instagram-logo-84.png");
+        background-size: 180px;
+        background-position-x: -5px;
+        background-position-y: -5px;
     }
 
     @media (max-width: 450px){
