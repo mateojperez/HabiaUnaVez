@@ -51,6 +51,7 @@
             text-align: map-get($vidriera, centro);
             padding: 10px;
             margin: 10px;
+            
         }
         
         .vidriera__precio{
@@ -61,25 +62,24 @@
             text-align: map-get($vidriera, centro);
             width: 100px;
             padding: 10px;
-            margin: 10px;
         }
         
         .botonComprar {
-            color: #0099CC;
-            background-color: rgba(240, 248, 255, 0.773);
-            border: 2px solid #0099CC;
+            color: #000000;
+            background-color: map-get($vidriera, colorTitulo);
+            border: 2px solid #000000;
             border-radius: 6px;
-            border: solid;
-            color: rgb(0, 0, 0);
-            padding: 16px 32px;
+            padding: 16px 15px;
             text-align: map-get($vidriera, centro);
-            font-size: 25px;
-            margin: 20px 10px;
+            margin: 15px ;
             -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
             cursor: pointer;
             text-decoration: none;
             text-transform: uppercase;
+            position: relative;
+            bottom: 42px;
+            left: 5px;
 
             &:hover {
                 background-color: #008CBA;
@@ -90,6 +90,9 @@
         
         .botonCarrito{
             @extend .botonComprar;
+            position: relative;
+            top: 5px;
+            
         }
     }
 

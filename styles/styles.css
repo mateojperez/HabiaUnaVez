@@ -50,11 +50,10 @@
   overflow: hidden;
 }
 .vidriera .vidriera__datos .vidrieraImagen:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .vidriera .vidriera__datos .vidriera__titulo {
-  background-color: #9fb9f1;
+  background-color: #e3f2fd;
   border-radius: 20px;
   text-align: center;
   padding: 10px;
@@ -63,34 +62,37 @@
 .vidriera .vidriera__datos .vidriera__precio {
   position: relative;
   left: 100px;
-  background-color: #9fb9f1;
+  background-color: #e3f2fd;
   border-radius: 20px;
   text-align: center;
   width: 100px;
   padding: 10px;
-  margin: 10px;
 }
 .vidriera .vidriera__datos .botonComprar, .vidriera .vidriera__datos .botonCarrito {
-  color: #0099CC;
-  background-color: rgba(240, 248, 255, 0.773);
-  border: 2px solid #0099CC;
+  color: #000000;
+  background-color: #e3f2fd;
+  border: 2px solid #000000;
   border-radius: 6px;
-  border: solid;
-  color: rgb(0, 0, 0);
-  padding: 16px 32px;
+  padding: 16px 15px;
   text-align: center;
-  font-size: 25px;
-  margin: 20px 10px;
-  -webkit-transition-duration: 0.4s;
+  margin: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+  bottom: 42px;
+  left: 5px;
 }
 .vidriera .vidriera__datos .botonComprar:hover, .vidriera .vidriera__datos .botonCarrito:hover {
   background-color: #008CBA;
   color: white;
 }
+.vidriera .vidriera__datos .botonCarrito {
+  position: relative;
+  top: 5px;
+}
+
 .barra {
   list-style: none;
   background-color: #e3f2fd;
@@ -172,6 +174,4 @@
 
 body {
   background-image: url("./../images/cielonube.jpg");
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=styles.css.map */
