@@ -1,18 +1,28 @@
-// let nombre = prompt("ingrese su nombre");
+const iva = 0.21;
+const recargoTarjeta = 0.10;
+const envio = 900;
 
-// while(nombre != "mateo")
-// {
-//     alert("usted no tiene acceso");
-//     nombre = prompt("ingrese su nombre");
-// }
+let precio;
+let pago = parseInt(prompt("ingrese forma de pago (1 = efectivo o 2 = tarjeta)"));
+let precioFinal = calculadora();
 
-// alert("usted tiene acceso al sistema");
+function calculadora (){
+    switch (pago){
+        case 1:
+            precio = parseInt(prompt("ingrese el valor del producto que desee comprar"));
+            return precio + (precio * iva) + envio;
+            break;
 
+        case 2:  
+            precio = parseInt(prompt("ingrese el valor del producto que desee comprar"));
+            return precio + (precio * iva) + envio + (precio * recargoTarjeta);
+            break;
 
-for (let a = 0; a < 10; a++){
-    let nombre = prompt ("ingrese su nombre");
-    let mensaje = nombre + " su turno es " + a;
-    alert (mensaje);
+        default:
+            return "error intente de nuevo"
+            break;
+    }
+
 }
 
-alert("no hay mas turnos")
+alert(precioFinal);
