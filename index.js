@@ -1,28 +1,28 @@
-const iva = 0.21;
-const recargoTarjeta = 0.10;
-const envio = 900;
 
-let precio;
-let pago = parseInt(prompt("ingrese forma de pago (1 = efectivo o 2 = tarjeta)"));
-let precioFinal = calculadora();
+const productos = [];
 
-function calculadora (){
-    switch (pago){
-        case 1:
-            precio = parseInt(prompt("ingrese el valor del producto que desee comprar"));
-            return precio + (precio * iva) + envio;
-            break;
-
-        case 2:  
-            precio = parseInt(prompt("ingrese el valor del producto que desee comprar"));
-            return precio + (precio * iva) + envio + (precio * recargoTarjeta);
-            break;
-
-        default:
-            return "error intente de nuevo"
-            break;
+class Producto{
+    constructor(nombre, precio, stock){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+        this.vendido = false;
     }
 
+    vender(){
+        this.vendido = true;
+    }
 }
 
-alert(precioFinal);
+for(let i = 0; i < 3; i++){
+    let nombre = prompt("ingrese nombre");
+    let precio = parseInt(prompt("ingrese precio"));
+    let stock = parseInt(prompt("ingrese cantidad en stock"));
+
+    let productoFinal = new Producto(nombre, precio, stock);
+
+    productos.push(productoFinal);
+}
+
+
+console.log(productos);
