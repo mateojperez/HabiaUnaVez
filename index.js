@@ -48,8 +48,8 @@ let contenedor = document.getElementById("vidriera")
 let vidriera = document.getElementsByClassName("vidrieraProducto")
 let productosCreados = [];
 let productosFinal = [vidriera, productosCreados]
-let buscador = prompt("ingrese el producto a buscar")
-let producto = productosFinal.find(item => item.nombre === nombre);
+// let buscador = prompt("ingrese el producto a buscar")
+// let producto = productosFinal.find(item => item.nombre === nombre);
 
 class Producto{
     constructor(nombre, precio, imagen, botonComprar, botonCarrito){
