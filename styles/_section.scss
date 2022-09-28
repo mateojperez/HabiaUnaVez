@@ -57,51 +57,34 @@
         
         .vidriera__precio{
             position: relative;
-            left: 100px;
+            left: 40px;
             top: 10px;
             background-color: map-get($vidriera, colorTitulo);
             border-radius: 20px;
             text-align: map-get($vidriera, centro);
             width: 100px;
-            padding: 10px;
+            padding: 18px 15px;
             border: 2px solid  map-get($vidriera, colorBorde);
-        }
-        
-        .botonComprar {
-            color: #000000;
-            background-color: map-get($vidriera, colorTitulo);
-            border: 2px solid  map-get($vidriera, colorBorde);
-            border-radius: 6px;
-            padding: 16px 15px;
-            text-align: map-get($vidriera, centro);
-            margin: 15px ;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            text-decoration: none;
-            text-transform: uppercase;
-            position: relative;
-            bottom: 42px;
-            left: 5px;
-
-            &:hover {
-                background-color: map-get($vidriera, colorBorde);
-                border: 2px solid map-get($vidriera, colorTitulo);
-                color: white;
-            }
-
         }
         
         .botonCarrito{
-            @extend .botonComprar;
             position: relative;
-            top: 5px;
+            left: 190px;
+            top: -70px;
             height: 75px;
             width: 75px;
             background-image: url("./../images/cart-add-regular-24.png");
             background-size: 200px;
             background-position-x: 5px;
             background-position-y: 5px;
+            color: #000000;
+            background-color: map-get($vidriera, colorTitulo);
+            border: 2px solid  map-get($vidriera, colorBorde);
+            border-radius: 20px;
+            padding: 16px 15px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
             
 
             &:hover{

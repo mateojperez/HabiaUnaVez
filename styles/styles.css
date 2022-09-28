@@ -64,45 +64,32 @@
 }
 .vidriera .vidriera__datos .vidriera__precio {
   position: relative;
-  left: 100px;
+  left: 40px;
   top: 10px;
   background-color: #e3f2fd;
   border-radius: 20px;
   text-align: center;
   width: 100px;
-  padding: 10px;
+  padding: 18px 15px;
   border: 2px solid #c0c1c2;
-}
-.vidriera .vidriera__datos .botonComprar, .vidriera .vidriera__datos .botonCarrito {
-  color: #000000;
-  background-color: #e3f2fd;
-  border: 2px solid #c0c1c2;
-  border-radius: 6px;
-  padding: 16px 15px;
-  text-align: center;
-  margin: 15px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  bottom: 42px;
-  left: 5px;
-}
-.vidriera .vidriera__datos .botonComprar:hover, .vidriera .vidriera__datos .botonCarrito:hover {
-  background-color: #c0c1c2;
-  border: 2px solid #e3f2fd;
-  color: white;
 }
 .vidriera .vidriera__datos .botonCarrito {
   position: relative;
-  top: 5px;
+  left: 190px;
+  top: -70px;
   height: 75px;
   width: 75px;
   background-image: url("./../images/cart-add-regular-24.png");
   background-size: 200px;
   background-position-x: 5px;
   background-position-y: 5px;
+  color: #000000;
+  background-color: #e3f2fd;
+  border: 2px solid #c0c1c2;
+  border-radius: 20px;
+  padding: 16px 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 .vidriera .vidriera__datos .botonCarrito:hover {
   background-image: url("./../images/cart-add-regular-84.png");
