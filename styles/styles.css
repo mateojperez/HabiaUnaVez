@@ -5,7 +5,7 @@
 }
 .titulo {
   position: absolute;
-  top: 20px;
+  top: 25px;
 }
 
 .vidriera {
@@ -36,6 +36,70 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.vidriera .modal-contenedor, .vidriera .modal-active, .vidriera .modal-desactive {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.vidriera .modal-desactive {
+  opacity: 0;
+  visibility: hidden;
+}
+.vidriera .modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+.vidriera .modal-carrito {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.vidriera .carritoInterfaz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.vidriera .botonCerrarCarrito {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+  background-color: #e3f2fd;
+  border: 2px solid #c0c1c2;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.vidriera .carritoContenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 750px;
+}
+.vidriera .borrarProducto {
+  width: 100px;
+  height: 40px;
+  color: #000000;
+  background-color: #e3f2fd;
+  border: 2px solid #c0c1c2;
+  border-radius: 15px;
+  cursor: pointer;
+  justify-content: flex-start;
 }
 .vidriera .vidrieraProducto {
   background: url("./../images/header.png");
