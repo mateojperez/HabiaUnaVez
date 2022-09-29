@@ -14,7 +14,10 @@ let productosCreados = [
 { id:8, nombre: "Remera Girafa", precio:1000 , imagen:"./images/remeras/remera 3.png"},
 { id:9, nombre: "Buzo Gris Monstruo", precio:1350 , imagen:"./images/buzos/buzo 3.png"},
 ];
-let carrito = [];
+var carro = [];
+console.log(carro);
+
+
 productosCreados.forEach(producto => {
     let div = document.createElement("div");
     div.className = "vidrieraProducto"
@@ -35,24 +38,42 @@ productosCreados.forEach(producto => {
 
 const agregarAlCarrito = (prodId) => {
     const item = productosCreados.find ((prod) => prod.id === prodId)
-    carrito.push(item)
+    localStorage.setItem(prodId, JSON.stringify(item));
+    var carrito = JSON.parse(localStorage.getItem(prodId));
+    carro.push(carrito);
     actualizarCarrito();
-    console.log(carrito);
 }
+
+
 
 const actualizarCarrito = () =>{
     carritoContenedor.innerHTML = "";
-
-    carrito.forEach((producto) =>{
+    for(const producto of carro){
         const div = document.createElement('div')
         div.className = "carritoContenedor"
         div.innerHTML = `<p>Nombre: ${producto.nombre} .  </p>
                          <p> Precio: ${producto.precio} . </p>
                          <button class="borrarProducto" onclick="eliminarDelCarrito(${producto.id})">Borrar</button>`;
         carritoContenedor.appendChild(div);
-    })
+    }
 } 
 
+if ((carro.length === 0) && (localStorage.length > 0)){
+    for(var i = 0; i < localStorage.length; i++){
+        var clave = localStorage.key(i);
+        var carrito = JSON.parse(localStorage.getItem(clave));
+        carro.push(carrito);
+        carritoContenedor.innerHTML = "";
+        for(const producto of carro){
+        const div = document.createElement('div')
+        div.className = "carritoContenedor"
+        div.innerHTML = `<p>Nombre: ${producto.nombre} .  </p>
+                         <p> Precio: ${producto.precio} . </p>
+                         <button class="borrarProducto" onclick="eliminarDelCarrito(${producto.id})">Borrar</button>`;
+        carritoContenedor.appendChild(div);
+    }
+    }
+}
 let cerrarCarrito = document.getElementById("botonCerrarCarrito");
 
 cerrarCarrito.addEventListener("click", () => {
@@ -68,11 +89,14 @@ abrirCarrito.addEventListener("click", () => {
 })
 
 const eliminarDelCarrito = (prodId) => {
-    const item = carrito.find((prod) => prod.id === prodId);
-    const indice = carrito.indexOf(item);
-    carrito.splice(indice, 1);
+    const item = carro.find((prod) => prod.id === prodId);
+    localStorage.removeItem(prodId);
+    const indice = carro.indexOf(item);
+    carro.splice(indice, 1);
     actualizarCarrito();
 }
+
+
 
 
 
